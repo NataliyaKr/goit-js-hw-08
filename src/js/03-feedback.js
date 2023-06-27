@@ -27,6 +27,7 @@ if (parseData) {
 
 function onFormSubmit(e) {
     e.preventDefault();
+    console.log({ email: form.email.value, message: form.message.value });
     form.reset();
     localStorage.removeItem(STORAGE_KEY);
 }
